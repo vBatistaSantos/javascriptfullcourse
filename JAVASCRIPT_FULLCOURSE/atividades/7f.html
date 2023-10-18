@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Atividade 7f</title>
+  </head>
+
+  <body>
+    <script>
+      let result='';
+
+      function convToFahrenheit(celsius){
+        const fahrenheit = (celsius*9/5)+32;
+        return fahrenheit;
+      }
+      
+      function convToCelsius(fahrenheit){
+        const celsius = (fahrenheit-32)*5/9;
+        return celsius;
+      }
+      
+      function convTemperature(degrees,unit){
+        if (unit==='C'){
+          return `${convToFahrenheit(degrees)}F`;
+        }else{
+          return `${convToCelsius(degrees)}C`;
+        }
+        
+      }
+
+
+      console.log(convToFahrenheit(25));
+      console.log(convToCelsius(86));
+
+      console.log(convTemperature(25,'C'));
+      console.log(convTemperature(86,'F'));
+      
+    </script>
+  </body>
+  
+</html>
